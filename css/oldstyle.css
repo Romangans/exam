@@ -1,0 +1,137 @@
+body {
+  width: 100%;
+  margin: 0 auto;
+  min-width: 1227px;
+}
+
+.pading-site {
+  padding: 0 3%;
+}
+
+
+.header {
+  background-image: url(/img/photo.jpg);
+  background-size: 100%;
+  padding: 40px 0 0 0;
+}
+
+.logo-menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  margin: 0;
+}
+
+.logo-icon {
+  fill: white;
+}
+
+.logo-name {
+  height: 26px;
+  font-family: "Raleway";
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: -1.36px;
+  line-height: 57px;
+  color: #ffffff;
+}
+
+.logo:hover .logo-icon {
+  fill: #4a4844;
+}
+
+.logo:hover .logo-name {
+  color: #4a4844;
+}
+
+.header-nav {
+  margin: 0;
+}
+
+.header-li {
+  display: inline-block;
+}
+
+.header-main {
+  margin: 285px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 90%;
+}
+
+.header-main-content {
+  text-align: center;
+
+  margin: 0 auto;
+}
+
+.header-content-h2 {
+  display: block;
+  color: #ffffff;
+  font-family: 'Raleway';
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.header-content-h1 {
+  display: block;
+  color: #ffffff;
+  font-family: "Raleway";
+  font-size: 52px;
+  font-weight: 400;
+}
+
+.header-content-p {
+  width: 562px;
+  color: #ffffff;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+/*carusel*/
+.carusel {
+  width: 40px;
+  height: 73px;
+  position: relative;
+  
+}
+
+.carusel:nth-of-type(1)::after {
+  content: "";
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  border-top: 2px solid #d3c1ad;
+  border-right: 2px solid #d3c1ad;
+  transform: rotate(225deg);
+  position: absolute;
+  top: 10px;
+  left: -25px;
+  margin: 0 50px 0 0;
+}
+
+.carusel:nth-of-type(2)::after {
+  content: "";
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  border-top: 2px solid #d3c1ad;
+  border-right: 2px solid #d3c1ad;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 10px;
+  left: -25px;
+  margin: 0 0 0 50px;
+}
+
+.carusel:hover::after {
+  border-top: 2px solid orange;
+  border-right: 2px solid orange;
+}
